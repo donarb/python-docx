@@ -109,6 +109,14 @@ class Document(ElementProxy):
         return self._part.core_properties
 
     @property
+    def app_properties(self):
+        """
+        A |AppProperties| object providing read access to the app
+        properties of this document.
+        """
+        return self._part.app_properties
+
+    @property
     def inline_shapes(self):
         """
         An |InlineShapes| object providing access to the inline shapes in
