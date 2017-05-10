@@ -10,6 +10,7 @@ import pytest
 
 from docx.opc.constants import RELATIONSHIP_TYPE as RT
 from docx.opc.coreprops import CoreProperties
+from docx.opc.appprops import AppProperties
 from docx.opc.package import OpcPackage, Unmarshaller
 from docx.opc.packuri import PACKAGE_URI
 from docx.opc.part import Part
