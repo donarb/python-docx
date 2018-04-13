@@ -37,6 +37,14 @@ class DocumentPart(XmlPart):
         return self.package.core_properties
 
     @property
+    def app_properties(self):
+        """
+        A |AppProperties| object providing reade access to the app
+        properties of this document.
+        """
+        return self.package.app_properties
+
+    @property
     def document(self):
         """
         A |Document| object providing access to the content of this document.
